@@ -67,7 +67,7 @@ const princessList = [
     {
         mbti: "ESTJ",
         name: "티아나",
-        description: "구체적이며, 현실적이고, 사실적인 경향이다.\n 일을 할 때는 조직화해서 처리해 나가는 성향을 가지고 있으며 지도력이 뛰어나다.",
+        description: "구체적이며, 현실적이고, 사실적인 경향이 있다.\n 일을 할 때는 조직화해서 처리해 나가는 성향을 가지고 있으며 지도력이 뛰어나다.",
         good_match: [],
         bad_match: [],
         img_src: "tiana.gif"

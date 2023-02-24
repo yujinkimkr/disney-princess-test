@@ -7,38 +7,42 @@
     <title>Document</title>
 </head>
 <style>
+    .container {
+        width: 400px;
+        height: 400px;
+        background-color: pink;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
     .box {
-        width: 500px;
-        height: 500px;
-        /* background-color: purple; */
-        /* background: linear-gradient( 90deg, yellow, red ); */
-        background: linear-gradient(180deg, blue, white);
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        border: 1px solid black;
     }
 
-    .cetner-align {
-        /* width: 800px; */
-        /* height: 800px; */
+    .box:last-child {
         background-color: red;
-        /* display: flex; */
-        /* justify-content: center; */
+        display: block;
+    }
+    
+    .container .box:last-child {
+        display: block;
     }
 
-    .divs {
-        width: 500px;
-        height: 500px;
-        background-color: purple;
-        margin: auto;
+    #lastbox {
+        display: block;
     }
 </style>
 <body>
     
-    <div class="bo1x">
-
-    </div>
-
-
-    <div class="cetner-align">
-        <div class="divs"></div>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box" id="lastbox" style="display: block;"></div>
     </div>
 </body>
 </html>
