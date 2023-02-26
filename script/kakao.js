@@ -1,5 +1,7 @@
 function sendLinkCustom() {
-  Kakao.init('https://developers.kakao.com/sdk/js/kakao.js');
+  if (!Kakao.isInitialized()) {
+    Kakao.init('https://developers.kakao.com/sdk/js/kakao.js');
+  }
   Kakao.Link.sendCustom({
       templateId: [90512]
   });
@@ -7,17 +9,19 @@ function sendLinkCustom() {
 
 try {
   function sendLinkDefault() {
-    Kakao.init("d6e3dab46dbeaca72f3e9c546a25432a");
+    if (!Kakao.isInitialized()) {
+      Kakao.init("d6e3dab46dbeaca72f3e9c546a25432a");
+    }
     Kakao.Link.sendDefault({
       objectType: 'feed',
       content: {
-        title: '딸기 치즈 케익',
-        description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
+        title: '재미로 보는 디즈니 공주 테스트',
+        description: '#디즈니 #MBTI #심리테스트',
         imageUrl:
-          'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+          'https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/201702/21/htm_20170221102628501735.jpg',
         link: {
-          mobileWebUrl: 'https://developers.kakao.com',
-          webUrl: 'https://developers.kakao.com',
+          mobileWebUrl: 'https://jade-pavlova-0b8af6.netlify.app/',
+          webUrl: 'https://jade-pavlova-0b8af6.netlify.app/',
         },
       },
       social: {
@@ -29,15 +33,15 @@ try {
         {
           title: '웹으로 보기',
           link: {
-            mobileWebUrl: 'https://developers.kakao.com',
-            webUrl: 'https://developers.kakao.com',
+            mobileWebUrl: 'https://jade-pavlova-0b8af6.netlify.app/',
+            webUrl: 'https://jade-pavlova-0b8af6.netlify.app/',
           },
         },
         {
           title: '앱으로 보기',
           link: {
-            mobileWebUrl: 'https://developers.kakao.com',
-            webUrl: 'https://developers.kakao.com',
+            mobileWebUrl: 'https://jade-pavlova-0b8af6.netlify.app/',
+            webUrl: 'https://jade-pavlova-0b8af6.netlify.app/',
           },
         },
       ],
