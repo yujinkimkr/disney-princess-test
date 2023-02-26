@@ -7,9 +7,13 @@
     <title>Disney Princess Type</title>
 </head>
 <link rel="stylesheet" href="./css/main.css">
+
+<!-- 카카오톡 공유하기 기능 -->
+<script type="text/JavaScript" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script src="./script/kakao.js"></script>
 <script src="./script/main.js"></script>
+
 <body onselectstart="return false;">
-    
     <section class="container">
         <div class="title">
             <div>디즈니 공주 유형 테스트</div>
@@ -24,6 +28,13 @@
         <div class="language">
             <div class="language__option">English</div>
             <div class="language__option">Polski</div>
+        </div>
+        <div class="share" style="text-align: center; margin-top: 20px;">
+            <a id="kakaotalk-sharing-btn" href="javascript:;">
+                <!-- <input type="button" value="공유하기"> -->
+                <input type="button" onClick="sendLinkCustom();" value="Custom" />
+                <input type="button" onClick="sendLinkDefault();" value="Default" />
+            </a>
         </div>
     </section>
 
@@ -236,9 +247,5 @@
             </div>
         </div>
     </section>
-
-
-
-
 </body>
 </html>
