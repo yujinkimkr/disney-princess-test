@@ -538,8 +538,6 @@ window.onload = function() {
         const charName = document.querySelector(".char_name");
         const charDescription = document.querySelector(".result_description");
 
-
-        
         
         for(let i = 0; i < princessList.length; i++) {
             if(result == princessList[i].mbti) {
@@ -549,7 +547,7 @@ window.onload = function() {
                 } else if(lan == 'en') {
                     charName.innerText = princessList[i].name_en;
                     charDescription.innerText = princessList[i].description_en; 
-
+                    
                     // 버튼 언어 변경
                     document.querySelector(".btn--share").value = "Share";
                     document.querySelector(".btn--reset").value = "Redo";
@@ -589,21 +587,23 @@ window.onload = function() {
 
             case "English":
                 document.documentElement.setAttribute("lang", "en");
+                changeFonts('en');
                 //초기 페이지 화면 영어로 변경 
                 document.querySelector(".container>.title>div:first-child").innerText = "Disney Princess Test";
                 document.querySelector(".container>.title>div:nth-child(2)").innerText = "Which princess am I most similar to?";
                 document.querySelector(".btn--start").value = "Start test";
                 break;
             case "Polski": 
-                // 폴란드어 폰트 변경 구현 필요
-
                 document.documentElement.setAttribute("lang", "pl");
+                // 폴란드어 폰트 변경 
+                changeFonts('pl');
                 document.querySelector(".container>.title>div:first-child").innerText = "Test Księżniczki Disneya";
                 document.querySelector(".container>.title>div:nth-child(2)").innerText = "Jaką jestem księżniczką?";
                 document.querySelector(".btn--start").value = "rozpocząć testowanie";
                 break; 
             case "한국어":
                 document.documentElement.setAttribute("lang", "ko");
+                changeFonts('ko');
                 document.querySelector(".container>.title>div:first-child").innerText = "디즈니 공주 유형 테스트";
                 document.querySelector(".container>.title>div:nth-child(2)").innerText = "나는 어떤 공주와 제일 비슷할까?";
                 document.querySelector(".btn--start").value = "테스트 시작하기";
@@ -612,4 +612,20 @@ window.onload = function() {
 
     }
 
+}
+
+function changeFonts(lang) {
+    if(lang == 'pl') {
+        document.body.style.fontFamily = "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+        document.querySelector("input[type=button]").style.fontFamily = "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+        // 버튼 폰트를 따로 변경 
+        document.querySelector('.btn--reset').style.fontFamily = "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+        document.querySelector('.btn--share').style.fontFamily = "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+    } else {
+        document.body.style.fontFamily = "Jua, sans-serif";
+        document.querySelector("input[type=button]").style.fontFamily = "Jua, sans-serif";
+        // 버튼 폰트를 따로 변경 
+        document.querySelector('.btn--reset').style.fontFamily = "Jua, sans-serif";
+        document.querySelector('.btn--share').style.fontFamily = "Jua, sans-serif";
+    }
 }
