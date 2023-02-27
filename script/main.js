@@ -128,7 +128,70 @@ const princessList = [
         bad_match: [],
         img_src: "rapunzel.gif"
     },
+];
 
+const questionListKr = [
+    {
+        question: "주중에는 회사였으니,",
+        option1: "주말에는 밖에 나가야 한다!",
+        option2: "주말에는 집에 있어야 한다!"
+    },
+    {
+        question: "취미 생활을 시작할 때 나는",
+        option1: "혼자 편안하게 할 수 있는 걸 찾아 보자!",
+        option2: "동호회에서 새로운 사람들 만날 수 있겠다!"
+    },
+    {
+        question: "친구랑 만나기로 했는데 갑자기 약속이 취소되었을 때",
+        option1: "아싸! 나가기 귀찮았는데... 이제 뭐할까~~? 신난다!",
+        option2: "앗.. 준비 다 했는데.... 누구 시간되는 사람 없나?"
+    },
+    {
+        question: "사과 하면 뭐가 생각나?",
+        option1: "백설공주, 애플 , 뉴턴",
+        option2: "빨갛다, 과일, 맛있다"
+    },
+    {
+        question: "비행기 타기 전에 무슨 생각해?",
+        option1: "비상구 자리에 앉을까? 추락하지는 않겠지..?",
+        option2: "기내식 뭐 나오지? 무슨 영화볼까?"
+    },
+    {
+        question: "노래들을 때 뭐가 중요해",
+        option1: "멜로디와 가사가 다 마음에 들어야 진정한 띵곡이지~!",
+        option2: "음악은 멜로디와 Feel이쥐!"
+    },
+    {
+        question: "친구한테 연락이 왔다 '나 교통사고 났어'",
+        option1: "어이구! 많이 다쳤어? 괜찮아?",
+        option2: "사고 심하게 났어? 차는 어때? 누구 과실이야?"
+    },
+    {
+        question: "친구: '나 우울해서 미용실 갔다 왔어'",
+        option1: "왜 우울해? 무슨 일 있었어?",
+        option2: "그래? 무슨 머리 했어? 염색? 파마? 보여줘!"
+    },
+    {
+        question: "친구가 약속에 늦었을 때",
+        option1: "사과를 하면 마음이 풀린다",
+        option2: "이유가 있으면 마음이 풀린다"
+    },
+    {
+        question: "여행갈 때 나는,",
+        option1: "내가 계획을 짜 봤는데 이렇게 하는 거 어때?!",
+        option2: "난 다 좋아!"
+    },
+    {
+        question: "요리할 때 나는,",
+        option1: "물은 정확하게 500ml 계량 컵으로 재야지!",
+        option2: "음식은 손 맛이지~ 대강 눈으로 보고 넣어~"
+    },
+    {
+        question: "카톡 창을 봤더니...",
+        option1: "메세지 오면 바로바로 읽어서 깔끔",
+        option2: "나중에 읽는 편이라~ 메세지가 잔뜩"
+    },
+    
 ];
 
 window.onload = function() {
@@ -151,23 +214,32 @@ window.onload = function() {
         document.querySelectorAll(".container")[1].style.display = "block";
     }
 
-    // 버튼 클릭시 다음 문제로 이동 (기존 문제 display:none 처리 )
+    // 버튼 클릭시 다음 문제로 이동 (기존 문제 display:none 처리)
+
+    // 버튼 클릭시 텍스트 변경
     const inner = document.querySelectorAll(".inner");
     const option = document.querySelectorAll(".option");
+    let no = 1; 
+    const questionEl = document.querySelector(".question>div:nth-child(2)");
+    const questionNo = document.querySelector(".question>div:first-child");
     for(let i = 0; i < option.length; i++){
-        let n = Math.floor(i/2);
         document.querySelectorAll(".option")[i].addEventListener("click", function() {
-            inner[n].style.display = "none";
-
-            if(n != 11) {
-                inner[n+1].style.display = "block";
+            //다음 문제로 넘기기
+            if(no != 12) {
+                questionNo.innerText = `Q${no+1}.`;
+                questionEl.innerText = questionListKr[no].question;
+                option[0].innerText = questionListKr[no].option1;
+                option[1].innerText = questionListKr[no].option2;
+                
+                no++;
+                
             } else {
-                //마지막 문항에서 결과 페이지로 이동
-                document.getElementsByClassName("result")[0].style.display = "block";
-                document.getElementsByClassName("container")[1].style.display = "none";
+                //결과 페이지 출력
+                // document.querySelector(".result").style.display = "block";
             }
             
             increaseStatusBar();
+            // 누를 때마다 점수 계산
             calcScore(i);
         });
     }
@@ -187,16 +259,16 @@ window.onload = function() {
     function calcScore(opt){
         if(question <= 3) {
             //E와 I 구별 문제
-            ei = (opt%2==0) ? --ei : ++ei;
+            ei = (opt==0) ? --ei : ++ei;
         } else if(question <= 6) {
             //N과 S 구별 문제
-            ns = (opt%2==0) ? --ns : ++ns;
+            ns = (opt==0) ? --ns : ++ns;
         } else if(question <= 9) {
             //F와 T 구별 문제
-            ft = (opt%2==0) ? --ft : ++ft;
+            ft = (opt==0) ? --ft : ++ft;
         } else {
             //J와 P 구별 문제
-            jp = (opt%2==0) ? --jp : ++jp;
+            jp = (opt==0) ? --jp : ++jp;
         }
         question++;
 
@@ -231,7 +303,15 @@ window.onload = function() {
         } else {
             result += "J"
         }
+        
+        showResult(result);
+    }
 
+    function showResult(result) {
+        // 결과화면 block 처리
+        document.querySelector(".result").style.display = "block";
+        // 문제 화면 숨김 처리 
+        document.getElementsByClassName("container")[1].style.display = "none";
        // 결과 화면에 출력하기
         const charName = document.querySelector(".char_name");
         const charDescription = document.querySelector(".result_description");
@@ -239,8 +319,8 @@ window.onload = function() {
         for(let i = 0; i < princessList.length; i++) {
             if(result == princessList[i].mbti) {
                 charName.innerText = princessList[i].name;
+                // console.log(princessList[i].name);
                 charDescription.innerText = princessList[i].description; 
-                console.log(princessList[i].img_src);
                 document.getElementById("princess_img").src = `./img/princess/${princessList[i].img_src}`;
                 break;
             }
