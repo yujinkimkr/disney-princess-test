@@ -1,9 +1,13 @@
 //MBTI별 공주리스트
-const princessListKr = [
+const princessList = [
     {
         mbti: 'ISTJ',
         name: '뮬란',
+        name_en: 'Mulan',
+        name_pl: 'Mulan',
         description: "일상적인 활동에 지루함을 느낀다.\n 현실적이면서 책임감이 강하고, \n 모든 일에 철저함이 있으며 사리분별력이 뛰어나다.",
+        description_en: "These people feel bored with their daily activities.\n They are down-to-earth and responsible. \nThey are thorough in everything and have good reasoning.",
+        description_pl: "Ci ludzie czują się znudzeni codziennymi zajęciami.\n Praktyczni i odpowiedzialni, \nPrzemyślani we wszystkim i dobrze rozumujący.",
         good_match: ['ESFP', 'ESTP'],
         bad_match: ['INFP', 'ENFP', 'INFJ', 'ENFJ'],
         img_src: "mulan.gif"
@@ -11,7 +15,11 @@ const princessListKr = [
     {
         mbti: 'ISFJ',
         name: '신데렐라',
+        name_en: 'Cinderella',
+        name_pl: 'Cinderella',
         description: "차분하고 헌신적인 사람들로 인내심이 강하다.\n 또한 다른 사람들의 감정 변화에 주의를 기울이는 경향이 있다.",
+        description_en: "These people are calm, dedicated, and patient.\n They also tend to pay attention to other people's mood swings.",
+        description_pl: "Ci ludzie są spokojni, oddani i cierpliwi.\n Mają też tendencję do zwracania uwagi na wahania nastroju innych osób.",
         good_match: [],
         bad_match: [],
         img_src: "cinderella.gif"
@@ -19,7 +27,11 @@ const princessListKr = [
     {
         mbti: "ISTP",
         name: "메가라",
+        name_en: 'Megara',
+        name_pl: 'Megara',
         description: "과묵하면서 분석적인 사람들로 상황을 민첩하게 파악하는 것을 잘한다.\n 도구 같은 걸 잘 다루어 손재주가 좋다.",
+        description_en: "These people are taciturn and analytical, and are good at quickly grasping the situation.\n They are good at handling things like tools and are dexterous.",
+        description_pl: "Ci ludzie są małomówni i analityczni, i są dobrzy w szybkim zrozumieniu sytuacji.\n Są dobrzy w posługiwaniu się przedmiotami takimi jak narzędzia i są zręczni.",
         good_match: [],
         bad_match: [],
         img_src: "megara.webp"
@@ -27,7 +39,11 @@ const princessListKr = [
     {
         mbti: "ISFP",
         name: "백설공주",
+        name_en: 'Snow White',
+        name_pl: 'Snow White',
         description: "말수는 적지만 다정하고 온화한 성품을 지니고 있다. \n 삶의 여유를 즐기려 하며 매사에 겸손함을 잃지 않습니다.",
+        description_en: "These people are of few words, but have a sweet and gentle disposition. \n I try to enjoy my leisurely life and do not lose my humility in everything.",
+        description_pl: "Ci ludzie są małomówni, ale mają słodkie i łagodne usposobienie. \n Staram się cieszyć spokojnym życiem i we wszystkim nie tracić pokory.",
         good_match: [],
         bad_match: [],
         img_src: "snowwhite.gif"
@@ -35,7 +51,11 @@ const princessListKr = [
     {
         mbti: "INTJ",
         name: "벨",
+        name_en: 'Belle',
+        name_pl: 'Belle',
         description: "일반적으로 사고력이 독창적이며 독립적인 성향이 강하다. \n  비판적인 분석력이 탁월하며 내적 신념이 강하다.",
+        description_en: "You are generally creative and independent. \n She has excellent critical analysis and strong inner convictions.",
+        description_pl: "Na ogół jesteś kreatywny i niezależny. \n Ma doskonałą analizę krytyczną i silne wewnętrzne przekonania.",
         good_match: [],
         bad_match: [],
         img_src: "belle.gif"
@@ -43,7 +63,11 @@ const princessListKr = [
     {
         mbti: "INFJ",
         name: "엘사",
+        name_en: 'Elsa',
+        name_pl: 'Elsa',
         description: "통찰력과 직관력이 뛰어나며 인내심이 강하다. \n 그들은 공동체 이익을 중요하게 생각한다. ",
+        description_en: "You have great insight, intuition, and perseverance. \n They value community interests.",
+        description_pl: "Masz wielki wgląd, intuicję i wytrwałość. \n Cenią interesy społeczności.",
         good_match: [],
         bad_match: [],
         img_src: "elsa.gif"
@@ -51,7 +75,11 @@ const princessListKr = [
     {
         mbti: "INTP",
         name: "자스민",
+        name_en: 'Jasmine',
+        name_pl: 'Jasmine',
         description: "이들은 조용하면서 과묵한 경향이 있다.\n 문제를 논리적, 분석적으로 해결하는 능력이 있다.",
+        description_en: "They tend to be quiet and reticent.\n They have the ability to solve problems logically and analytically.",
+        description_pl: "Zwykle są ciche i powściągliwe.\n Mają zdolność logicznego i analitycznego rozwiązywania problemów.",
         good_match: [],
         bad_match: [],
         img_src: "jasmine.gif"
@@ -59,7 +87,11 @@ const princessListKr = [
     {
         mbti: "INFP",
         name: "오로라",
+        name_en: 'Aurora',
+        name_pl: 'Aurora',
         description: "성실하며, 이해심이 많은 개방적이다. \n 표현을 잘 하지는 않으나 내적 신념이 강하다.",
+        description_en: "You are sincere, understanding and open. \nI don't express myself well, but I have a strong inner conviction.",
+        description_pl: "Jesteś szczery, wyrozumiały i otwarty. \nNie wyrażam się dobrze, ale mam silne wewnętrzne przekonanie.",
         good_match: [],
         bad_match: [],
         img_src: "aurora.gif"
@@ -67,7 +99,11 @@ const princessListKr = [
     {
         mbti: "ESTJ",
         name: "티아나",
+        name_en: 'Tiana',
+        name_pl: 'Tiana',
         description: "구체적이며, 현실적이고, 사실적인 경향이 있다.\n 일을 할 때는 조직화해서 처리해 나가는 성향을 가지고 있으며 지도력이 뛰어나다.",
+        description_en: "You tend to be specific, down-to-earth, and factual.\n You have a tendency to organize and manage things and have excellent leadership skills.",
+        description_pl: "Masz tendencję do bycia konkretnym, rzeczowym i rzeczowym.\n Masz tendencję do organizowania i zarządzania sprawami oraz masz doskonałe umiejętności przywódcze.",
         good_match: [],
         bad_match: [],
         img_src: "tiana.gif"
@@ -75,7 +111,11 @@ const princessListKr = [
     {
         mbti: "ESFJ",
         name: "안나",
+        name_en: "Anna",
+        name_pl: "Anna",
         description: "따뜻한 마음을 가지고 있으며 이야기하는 것에 호의적으로 생각한다.\n 또한 타인에 대한 관심과 동정심이 많으며 친절하다. ",
+        description_en: "You have a warm heart and are friendly to talk to.\nYou are also caring, compassionate, and kind to others.",
+        description_pl: "Masz ciepłe serce i łatwo się z tobą rozmawia.\nJesteś także troskliwy, współczujący i miły dla innych.",
         good_match: [],
         bad_match: [],
         img_src: "anna.gif"
@@ -83,7 +123,11 @@ const princessListKr = [
     {
         mbti: "ESTP",
         name: "메리다",
-        description: " 느긋한 성격으로 관용적이며 타협에 능하다.\n 그렇기 때문에 현실적인 문제를 해결하는 능력이 풍부하다.",
+        name_en: "Merida",
+        name_pl: "Merida",
+        description: "느긋한 성격으로 관용적이며 타협에 능하다.\n 그렇기 때문에 현실적인 문제를 해결하는 능력이 풍부하다.",
+        description_en: "You have a laid-back personality, are tolerant, and are good at negotiating.\n That's why you have a lot of ability to solve realistic problems.",
+        description_pl: "Jesteś wyluzowany, tolerancyjny i dobry w kompromisach.\n Dlatego masz dużą zdolność rozwiązywania realistycznych problemów.",
         good_match: [],
         bad_match: [],
         img_src: "merida.gif"
@@ -91,7 +135,11 @@ const princessListKr = [
     {
         mbti: "ESFP",
         name: "에리얼",
+        name_en: "Ariel",
+        name_pl: "Ariel",
         description: "사교적이면서 활동적이다.\n 또한 수용적이며, 낙천적이고 친절하다.",
+        description_en: "You are sociable and active.\n Also accommodating, optimistic and friendly.",
+        description_pl: "Jesteś towarzyski i aktywny.\n Również gościnny, optymistyczny i przyjazny.",
         good_match: [],
         bad_match: [],
         img_src: "arial.gif"
@@ -99,7 +147,11 @@ const princessListKr = [
     {
         mbti: "ENTJ",
         name: "키다",
+        name_en: "Kida",
+        name_pl: "Kida",
         description: "준비를 철저하게 하며, 활동적이면서 솔직한 사람들이다.\n 단호한 결단력 및 통솔력을 갖춘 것이 특징이다.",
+        description_en: "You are well-prepared, active, and outspoken.\n You are characterized by firm determination and leadership.",
+        description_pl: "Jesteś dobrze przygotowany, aktywny i szczery.\n Cechuje Cię stanowcza determinacja i przywództwo.",
         good_match: [],
         bad_match: [],
         img_src: "kida.gif"
@@ -107,7 +159,11 @@ const princessListKr = [
     {
         mbti: "ENFJ",
         name: "포카혼타스",
+        name_en: "Pokahontas",
+        name_pl: "Pokahontas",
         description: "사교적이며, 타인들의 의견을 존중하는 것을 중요시 한다.\n 그러나 본인에게 하는 비판에 대해서는 예민하게 반응하는 경향이 많다.",
+        description_en: "You are outgoing and value the opinions of others.\n However, you tend to react sensitively to criticism directed against you.",
+        description_pl: "Jesteś towarzyski i cenisz opinie innych.\n Jednak zwykle reagujesz wrażliwie na krytykę skierowaną przeciwko tobie.",
         good_match: [],
         bad_match: [],
         img_src: "pokahontas.gif"
@@ -115,7 +171,11 @@ const princessListKr = [
     {
         mbti: "ENTP",
         name: "에스메랄다",
+        name_en: "Esmeralda",
+        name_pl: "Esmeralda",
         description: "독창적이며 민첩한 사람들이 많다.\n 특히 넓은 안목을 가지고 있으며 여러 가지 방면과 재능과 관심을 지니고 있습니다.",
+        description_en: "These types tend to be inventive and agile.\n You have a particularly broad eye and have many directions, talents and interests.",
+        description_pl: "Te typy są zwykle pomysłowe i zwinne.\n Masz szczególnie szerokie oko i masz wiele kierunków, talentów i zainteresowań.",
         good_match: [],
         bad_match: [],
         img_src: "esmeralda.gif"
@@ -123,7 +183,11 @@ const princessListKr = [
     {
         mbti: "ENFP",
         name: "라푼젤",
+        name_en: "Rapunzel",
+        name_pl: "Rapunzel",
         description: "따뜻하며, 정열적이고 활기가 있는 경향이 많다.\n 이를 뒷받침 하는 재능이 충만하며 상상력과 감수성이 풍부하다.",
+        description_en: "You tend to be warm, passionate, and energetic.\n You are full of talent to support this, and you are full of imagination and sensitivity.",
+        description_pl: "Zwykle jesteś ciepły, namiętny i energiczny.\n Masz talent, by to wspierać, jesteś pełen wyobraźni i wrażliwości.",
         good_match: [],
         bad_match: [],
         img_src: "rapunzel.gif"
@@ -256,8 +320,73 @@ const questionListPl = [
     },
 ];
 
+const questionListEn = [
+    {
+        question: "I was at work during the week, so",
+        option1: "I should go outside on the weekends!",
+        option2: "I should stay home on weekends!"
+    },
+    {
+        question: "When I started my hobby",
+        option1: "Let's find something we can do comfortably alone!",
+        option2: "I can meet new people in the club!"
+    },
+    {
+        question: "When I was supposed to meet up with a friend, but it's suddenly canceled",
+        option1: "Oh yea! I was lazy to go out... Now what should I do? exciting!",
+        option2: "Ah.. I've prepared everything... but does anyone have time??"
+    },
+    {
+        question: "What do you think of when you apologize?",
+        option1: "Snow White, Apple, Newton",
+        option2: "red, fruit, delicious"
+    },
+    {
+        question: "What do you think about before getting on the plane?",
+        option1: "Should I sit in the emergency exit seat? Won't the plane crash??",
+        option2: "What's the in-flight meal? what movie do you want to see?"
+    },
+    {
+        question: "What is important when listening to a song?",
+        option1: "True masterpieces have good lyrics and melody",
+        option2: "Music is a melody and a feel!"
+    },
+    {
+        question: "I got a call from a friend saying 'I've been in a car accident'",
+        option1: "oops! Are you hurt a lot? are you okay?",
+        option2: "Did you have a bad accident? how about tea who is at fault"
+    },
+    {
+        question: "Friend: 'I went to the beauty salon because I was depressed'",
+        option1: "why are you depressed What happened?",
+        option2: "did you? what hair did you do? dyeing? Perm? show me!"
+    },
+    {
+        question: "When a friend is late for an appointment",
+        option1: "An apology relieves the mind",
+        option2: "If the friend has a reason, I'll be relieved"
+    },
+    {
+        question: "When I travel,",
+        option1: "I made a plan, how about doing it like this?!",
+        option2: "I like everything!"
+    },
+    {
+        question: "when i cook,",
+        option1: "Water should be accurately measured with a 500ml measuring cup!",
+        option2: "Food is tasted by hand~ Roughly see it with your eyes and put it in~"
+    },
+    {
+        question: "I am looking at my messenger...",
+        option1: "No message! When you receive a message, I read it right away",
+        option2: "I tend to read it later, so there are a lot of messages"
+    },
+];
+
 window.onload = function() {
     let language = "kr";
+    let lan = document.documentElement.getAttribute("lang");
+
     const containerEls = document.getElementsByClassName("container");
 
     // 시작하기 버튼 클릭 시, 메인 페이지 사라지는 효과
@@ -275,7 +404,7 @@ window.onload = function() {
 
     function showQuestion() {
         document.querySelectorAll(".container")[1].style.display = "block";
-        let lan = document.documentElement.getAttribute("lang");
+        lan = document.documentElement.getAttribute("lang");
 
         if(lan == 'ko') {
             questionEl.innerText = questionListKr[0].question;
@@ -303,15 +432,29 @@ window.onload = function() {
     let no = 1; 
     const questionEl = document.querySelector(".question>div:nth-child(2)");
     const questionNo = document.querySelector(".question>div:first-child");
+
     for(let i = 0; i < option.length; i++){
         document.querySelectorAll(".option")[i].addEventListener("click", function() {
             //다음 문제로 넘기기
             if(no != 12) {
+
                 questionNo.innerText = `Q${no+1}.`;
-                questionEl.innerText = questionListKr[no].question;
-                option[0].innerText = questionListKr[no].option1;
-                option[1].innerText = questionListKr[no].option2;
-                no++;
+                if(lan == 'ko') {
+                    questionEl.innerText = questionListKr[no].question;
+                    option[0].innerText = questionListKr[no].option1;
+                    option[1].innerText = questionListKr[no].option2;
+                    no++;
+                } else if(lan == 'en') {
+                    questionEl.innerText = questionListEn[no].question;
+                    option[0].innerText = questionListEn[no].option1;
+                    option[1].innerText = questionListEn[no].option2;
+                    no++;
+                } else if(lan == 'pl') {
+                    questionEl.innerText = questionListPl[no].question;
+                    option[0].innerText = questionListPl[no].option1;
+                    option[1].innerText = questionListPl[no].option2;
+                    no++;
+                }
                 
             } else {
                 //결과 페이지 출력
@@ -395,22 +538,44 @@ window.onload = function() {
         const charName = document.querySelector(".char_name");
         const charDescription = document.querySelector(".result_description");
 
-        for(let i = 0; i < princessListKr.length; i++) {
-            if(result == princessListKr[i].mbti) {
-                charName.innerText = princessListKr[i].name;
-                // console.log(princessListKr[i].name);
-                charDescription.innerText = princessListKr[i].description; 
-                document.getElementById("princess_img").src = `./img/princess/${princessListKr[i].img_src}`;
+
+        
+        
+        for(let i = 0; i < princessList.length; i++) {
+            if(result == princessList[i].mbti) {
+                if(lan == 'ko') {
+                    charName.innerText = princessList[i].name;
+                    charDescription.innerText = princessList[i].description; 
+                } else if(lan == 'en') {
+                    charName.innerText = princessList[i].name_en;
+                    charDescription.innerText = princessList[i].description_en; 
+
+                    // 버튼 언어 변경
+                    document.querySelector(".btn--share").value = "Share";
+                    document.querySelector(".btn--reset").value = "Redo";
+                } else if(lan == 'pl') {
+                    charName.innerText = princessList[i].name_pl;
+                    charDescription.innerText = princessList[i].description_pl; 
+                    
+                    // 버튼 언어 변경
+                    document.querySelector(".btn--share").value = "Udział";
+                    document.querySelector(".btn--reset").value = "Przywróć";
+                }
+
+                document.getElementById("princess_img").src = `./img/princess/${princessList[i].img_src}`;
+
                 break;
+                
             }
         }
             
+        // 테스트 다시 하기
         document.querySelector(".btn--reset").addEventListener("click", function() {
             location.reload();
         });
     }
 
-    // 다른 언어 준비 중
+    // 언어 변경
     const langOpt = document.querySelectorAll(".language__option");
     for(let i = 0; i < langOpt.length; i++){
         langOpt[i].addEventListener("click", function(){
@@ -420,7 +585,7 @@ window.onload = function() {
 
     function changeLanguage(langOpt) {
         switch(langOpt.innerText){
-            // 깜빡이기
+            // 깜빡이기 - 구현 필요
 
             case "English":
                 document.documentElement.setAttribute("lang", "en");
@@ -430,7 +595,8 @@ window.onload = function() {
                 document.querySelector(".btn--start").value = "Start test";
                 break;
             case "Polski": 
-                // 폴란드어 폰트 변경....
+                // 폴란드어 폰트 변경 구현 필요
+
                 document.documentElement.setAttribute("lang", "pl");
                 document.querySelector(".container>.title>div:first-child").innerText = "Test Księżniczki Disneya";
                 document.querySelector(".container>.title>div:nth-child(2)").innerText = "Jaką jestem księżniczką?";
