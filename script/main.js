@@ -1,5 +1,5 @@
 //MBTI별 공주리스트
-const princessList = [
+const princessListKr = [
     {
         mbti: 'ISTJ',
         name: '뮬란',
@@ -191,10 +191,73 @@ const questionListKr = [
         option1: "메세지 오면 바로바로 읽어서 깔끔",
         option2: "나중에 읽는 편이라~ 메세지가 잔뜩"
     },
-    
+];
+
+const questionListPl = [
+    {
+        question: "Bo w tygodniu byłem w pracy,",
+        option1: "Musimy wychodzić w weekendy",
+        option2: "Powinieneś zostać w domu w weekendy!"
+    },
+    {
+        question: "Kiedy zaczynałem swoją pasję",
+        option1: "Znajdźmy coś, co możemy robić wygodnie sami!",
+        option2: "W klubie możesz poznać nowych ludzi!"
+    },
+    {
+        question: "Kiedy miałam się spotkać z przyjaciółką, ale nagle spotkanie zostało odwołane",
+        option1: "O tak! Wychodzenie z domu było irytujące... Co teraz powinienem zrobić~~? ekscytujący!",
+        option2: "Ah.. Jestem gotowy.... Czy ktoś ma czas?"
+    },
+    {
+        question: "O czym myślisz, kiedy przepraszasz?",
+        option1: "Królewna Śnieżka, Jabłko, Newton",
+        option2: "czerwony, owocowy, pyszny"
+    },
+    {
+        question: "O czym myślisz przed wejściem do samolotu?",
+        option1: "Czy powinienem usiąść na miejscu przy wyjściu awaryjnym? Czy nie spadnie?",
+        option2: "Jaki jest posiłek podczas lotu? jaki film chcesz obejrzeć?"
+    },
+    {
+        question: "Jakie znaczenie ma słuchanie muzyki?",
+        option1: "To prawdziwe arcydzieło, jeśli podoba ci się melodia i tekst!",
+        option2: "Muzyka to melodia i uczucie szczura!"
+    },
+    {
+        question: "Dostałem telefon od znajomego, który powiedział: „Miałem wypadek samochodowy”",
+        option1: "Ups! Czy jesteś bardzo ranny? czy wszystko w porządku?",
+        option2: "Miałeś poważny wypadek? co powiesz na herbatę kto zawinił"
+    },
+    {
+        question: "Przyjaciel: „Poszedłem do salonu piękności, ponieważ miałem depresję”",
+        option1: "dlaczego jesteś w depresji Co się stało?",
+        option2: "Dobra? jakie włosy zrobiłaś? barwiący? Trwała ondulacja? Pokaż mi!"
+    },
+    {
+        question: "Kiedy przyjaciel spóźnia się na spotkanie",
+        option1: "Przeprosiny uspokajają umysł",
+        option2: "Jeśli masz powód, twoje serce odetchnie z ulgą"
+    },
+    {
+        question: "Kiedy podróżuję, I",
+        option1: "Zrobiłem plan, co ty na to?",
+        option2: "Lubię wszystko!"
+    },
+    {
+        question: "Podczas gotowania I",
+        option1: "Wodę należy dokładnie odmierzyć miarką o pojemności 500 ml!",
+        option2: "Jedzenie smakuje się ręcznie ~ Z grubsza zobacz to na własne oczy i włóż ~"
+    },
+    {
+        question: "Spojrzałem na okno rozmowy kakao...",
+        option1: "Gdy otrzymasz wiadomość, przeczytaj ją od razu",
+        option2: "Zwykle czytam to później, więc jest dużo wiadomości"
+    },
 ];
 
 window.onload = function() {
+    let language = "kr";
     const containerEls = document.getElementsByClassName("container");
 
     // 시작하기 버튼 클릭 시, 메인 페이지 사라지는 효과
@@ -207,11 +270,29 @@ window.onload = function() {
             containerEls[0].style.display = "none";
             // 문제가 담긴 contianer 보이게 하기 
             showQuestion();
-        }, 900);
+        }, 850);
     });
 
     function showQuestion() {
         document.querySelectorAll(".container")[1].style.display = "block";
+        let lan = document.documentElement.getAttribute("lang");
+
+        if(lan == 'ko') {
+            questionEl.innerText = questionListKr[0].question;
+            option[0].innerText = questionListKr[0].option1;
+            option[1].innerText = questionListKr[0].option2;
+        } else if(lan == 'en') {
+            questionEl.innerText = questionListEn[0].question;
+            option[0].innerText = questionListEn[0].option1;
+            option[1].innerText = questionListEn[0].option2;
+        } else if(lan == 'pl') {
+            questionEl.innerText = questionListPl[0].question;
+            option[0].innerText = questionListPl[0].option1;
+            option[1].innerText = questionListPl[0].option2;
+        }
+
+        questionNo.innerText = `Q1.`;
+        //한국어 버전
     }
 
     // 버튼 클릭시 다음 문제로 이동 (기존 문제 display:none 처리)
@@ -230,7 +311,6 @@ window.onload = function() {
                 questionEl.innerText = questionListKr[no].question;
                 option[0].innerText = questionListKr[no].option1;
                 option[1].innerText = questionListKr[no].option2;
-                
                 no++;
                 
             } else {
@@ -303,7 +383,6 @@ window.onload = function() {
         } else {
             result += "J"
         }
-        
         showResult(result);
     }
 
@@ -316,12 +395,12 @@ window.onload = function() {
         const charName = document.querySelector(".char_name");
         const charDescription = document.querySelector(".result_description");
 
-        for(let i = 0; i < princessList.length; i++) {
-            if(result == princessList[i].mbti) {
-                charName.innerText = princessList[i].name;
-                // console.log(princessList[i].name);
-                charDescription.innerText = princessList[i].description; 
-                document.getElementById("princess_img").src = `./img/princess/${princessList[i].img_src}`;
+        for(let i = 0; i < princessListKr.length; i++) {
+            if(result == princessListKr[i].mbti) {
+                charName.innerText = princessListKr[i].name;
+                // console.log(princessListKr[i].name);
+                charDescription.innerText = princessListKr[i].description; 
+                document.getElementById("princess_img").src = `./img/princess/${princessListKr[i].img_src}`;
                 break;
             }
         }
@@ -331,13 +410,40 @@ window.onload = function() {
         });
     }
 
-
     // 다른 언어 준비 중
     const langOpt = document.querySelectorAll(".language__option");
     for(let i = 0; i < langOpt.length; i++){
         langOpt[i].addEventListener("click", function(){
-            alert("서비스 준비 중입니다.");
+                changeLanguage(langOpt[i]);
         });
+    }
+
+    function changeLanguage(langOpt) {
+        switch(langOpt.innerText){
+            // 깜빡이기
+
+            case "English":
+                document.documentElement.setAttribute("lang", "en");
+                //초기 페이지 화면 영어로 변경 
+                document.querySelector(".container>.title>div:first-child").innerText = "Disney Princess Test";
+                document.querySelector(".container>.title>div:nth-child(2)").innerText = "Which princess am I most similar to?";
+                document.querySelector(".btn--start").value = "Start test";
+                break;
+            case "Polski": 
+                // 폴란드어 폰트 변경....
+                document.documentElement.setAttribute("lang", "pl");
+                document.querySelector(".container>.title>div:first-child").innerText = "Test Księżniczki Disneya";
+                document.querySelector(".container>.title>div:nth-child(2)").innerText = "Jaką jestem księżniczką?";
+                document.querySelector(".btn--start").value = "rozpocząć testowanie";
+                break; 
+            case "한국어":
+                document.documentElement.setAttribute("lang", "ko");
+                document.querySelector(".container>.title>div:first-child").innerText = "디즈니 공주 테스트";
+                document.querySelector(".container>.title>div:nth-child(2)").innerText = "나는 어떤 공주일까?";
+                document.querySelector(".btn--start").value = "테스트 시작하기";
+                break;
+        }
+
     }
 
 }
