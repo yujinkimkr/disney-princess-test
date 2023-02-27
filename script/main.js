@@ -604,8 +604,8 @@ window.onload = function() {
                 break; 
             case "한국어":
                 document.documentElement.setAttribute("lang", "ko");
-                document.querySelector(".container>.title>div:first-child").innerText = "디즈니 공주 테스트";
-                document.querySelector(".container>.title>div:nth-child(2)").innerText = "나는 어떤 공주일까?";
+                document.querySelector(".container>.title>div:first-child").innerText = "디즈니 공주 유형 테스트";
+                document.querySelector(".container>.title>div:nth-child(2)").innerText = "나는 어떤 공주와 제일 비슷할까?";
                 document.querySelector(".btn--start").value = "테스트 시작하기";
                 break;
         }
