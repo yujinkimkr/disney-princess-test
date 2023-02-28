@@ -10,7 +10,6 @@
 
 body {
     font-family: 'Jua', sans-serif;
-    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
     margin: 0;
 }
 
@@ -113,11 +112,11 @@ body {
     display: none;
 }
 
-.container .question__area .inner .options .option span::after {
+/* .container .question__area .inner .options .option span::after {
     content: "\A";
     white-space: pre;
     display:block;
-}
+} */
 
 
 /* RESULT PAGE */
@@ -127,7 +126,7 @@ body {
     margin-bottom: 100px;
     background: linear-gradient(180deg, var(--main-theme-color), white);
     height: 100%;
-    width: 40%;
+    width: 60%;
     min-height: 100vh;
     padding-bottom: 70px;
     margin: auto;
@@ -165,31 +164,11 @@ body {
         position: relative;
     }
 
-    .btn .btn--reset{
-        /* background-color: red; */
-    }
-    
-    .btn--reset {
-        /* width: 100%;
-        background-color: var(--main-theme-color);
-        font-family: 'Jua', sans-serif;
-        height: 50px;
-        border: none;
-        border-radius: 10px;
-        box-shadow: 3px 4px 2px rgb(100, 100, 100);
-        font-size: 22px;
-        cursor: pointer;
-        background-color: red; */
-    }
-
     .container .question__area .inner .options .option {
         flex-direction: column;
     }
 
 }
-
-
-
 
 .result .char_name {
     margin-top: 40px;
@@ -215,12 +194,9 @@ body {
 }
 
 .result .btn:not(:last-child) {
-    margin-top: 100px;
-}
-
-.result .btn:last-child {
     margin-top: 20px;
 }
+
 
 .result .result__box {
     background: #fff;
@@ -245,9 +221,51 @@ body {
     padding-top: 30px;
 }
 
-.btn .btn--share {
-    background-color: #fff;
+
+/* MATCH */
+.result .result__box .match {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
 }
+
+.match {
+
+}
+
+.match>div {
+    background-color: rgb(181, 232, 235);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px #333;
+}
+
+.match .good-match {
+    margin-right: 20px;
+}
+
+.match .bad-match {
+
+}
+
+.match .good-match .good-title {
+    font-size: 1.3rem;
+}
+
+.match .bad-match .bad-title {
+    font-size: 1.3rem;
+}
+
+.match .good-match .good-princess {
+
+}
+
+.match .bad-match .bad-princcess {
+
+}
+
+
+
 
 /* LANGUAGE */
 .language {
@@ -278,6 +296,10 @@ body {
     font-size: 0.5em;
 }
     
+.btn .btn--share {
+    background-color: #fff;
+}
+
 .btn:hover input[type=button] {
     background-color:var(--selected-color); 
 }
@@ -292,4 +314,5 @@ body {
     box-shadow: 3px 4px 2px rgb(100, 100, 100);
     font-size: 22px;
     cursor: pointer;
+    margin-top: 15px;
 }
