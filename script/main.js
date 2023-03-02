@@ -328,8 +328,8 @@ const questionListEn = [
     },
     {
         question: "When I started my hobby",
-        option1: "Let's find something we can do comfortably alone!",
-        option2: "I can meet new people in the club!"
+        option1: "Something I can do alone",
+        option2: "Meeting new people in the club!"
     },
     {
         question: "When I was supposed to meet up with a friend, but it's suddenly canceled",
@@ -353,8 +353,8 @@ const questionListEn = [
     },
     {
         question: "I got a call from a friend saying 'I've been in a car accident'",
-        option1: "oops! Are you hurt a lot? are you okay?",
-        option2: "Did you have a bad accident? \n how about tea who is at fault"
+        option1: "Oops! Are you hurt a lot? are you okay?",
+        option2: "Did you have a bad accident? \n how about car, Whose fault is it"
     },
     {
         question: "Friend: 'I went to the beauty salon \n because I was depressed'",
@@ -368,7 +368,7 @@ const questionListEn = [
     },
     {
         question: "When I travel,",
-        option1: "I made a plan, how about doing it like this?!",
+        option1: "I made a plan, how about doing like this?!",
         option2: "I like everything!"
     },
     {
