@@ -7,7 +7,7 @@ const princessList = [
         name_pl: 'Mulan',
         description: "일상적인 활동에 지루함을 느낀다.\n 현실적이면서 책임감이 강하고, \n 모든 일에 철저함이 있으며 사리분별력이 뛰어나다.",
         description_en: "These people feel bored with their daily activities.\n They are down-to-earth and responsible. \nThey are thorough in everything and have good reasoning.",
-        description_pl: "Ci ludzie czują się znudzeni codziennymi zajęciami.\n Praktyczni i odpowiedzialni, \nPrzemyślani we wszystkim i dobrze rozumujący.",
+        description_pl: "Ci ludzie czują się znudzeni codziennymi zajęciami.\n Twardo stąpający po ziemi i odpowiedzialni, \nMyślący o wszystkim i dobrze rozumujący.",
         good_match: ['ESFP', 'ESTP'],
         bad_match: ['INFP', 'ENFP', 'INFJ', 'ENFJ'],
         img_src: "mulan.gif"
@@ -31,7 +31,7 @@ const princessList = [
         name_pl: 'Megara',
         description: "과묵하면서 분석적인 사람들로 상황을 민첩하게 파악하는 것을 잘한다.\n 도구 같은 걸 잘 다루어 손재주가 좋다.",
         description_en: "These people are taciturn and analytical, and are good at quickly grasping the situation.\n They are good at handling things like tools and are dexterous.",
-        description_pl: "Ci ludzie są małomówni i analityczni, i są dobrzy w szybkim zrozumieniu sytuacji.\n Są dobrzy w posługiwaniu się przedmiotami takimi jak narzędzia i są zręczni.",
+        description_pl: "Ci ludzie są małomówni i analityczni, są dobrzy w szybkiej analizie sytuacji.\n Są zręczni.",
         good_match: ['ESFJ', 'ESTJ'],
         bad_match: ['INFP', 'ENFP', 'INFJ', 'ENFJ'],
         img_src: "megara.webp"
@@ -43,7 +43,7 @@ const princessList = [
         name_pl: 'Snow White',
         description: "말수는 적지만 다정하고 온화한 성품을 지니고 있다. \n 삶의 여유를 즐기려 하며 매사에 겸손함을 잃지 않습니다.",
         description_en: "These people are of few words, but have a sweet and gentle disposition. \n I try to enjoy my leisurely life and do not lose my humility in everything.",
-        description_pl: "Ci ludzie są małomówni, ale mają słodkie i łagodne usposobienie. \n Staram się cieszyć spokojnym życiem i we wszystkim nie tracić pokory.",
+        description_pl: "Ci ludzie są małomówni, ale mają słodkie i łagodne usposobienie. \n Starają się cieszyć spokojnym życiem i przede wszystkim, nie tracić pokory.",
         good_match: ['ENFJ', 'ESFJ', 'ESTJ'],
         bad_match: ['INFP','ENFP','INFJ'],
         img_src: "snowwhite.gif"
@@ -55,7 +55,7 @@ const princessList = [
         name_pl: 'Belle',
         description: "일반적으로 사고력이 독창적이며 독립적인 성향이 강하다. \n  비판적인 분석력이 탁월하며 내적 신념이 강하다.",
         description_en: "You are generally creative and independent. \n She has excellent critical analysis and strong inner convictions.",
-        description_pl: "Na ogół jesteś kreatywny i niezależny. \n Ma doskonałą analizę krytyczną i silne wewnętrzne przekonania.",
+        description_pl: "Na ogół są kreatywni i niezależni. \n Mają doskonałą analizę krytyczną i silne wewnętrzne przekonania.",
         good_match: ['ENFP', 'ENTP'],
         bad_match: [],
         img_src: "belle.gif"
@@ -67,7 +67,7 @@ const princessList = [
         name_pl: 'Elsa',
         description: "통찰력과 직관력이 뛰어나며 인내심이 강하다. \n 그들은 공동체 이익을 중요하게 생각한다. ",
         description_en: "You have great insight, intuition, and perseverance. \n They value community interests.",
-        description_pl: "Masz wielki wgląd, intuicję i wytrwałość. \n Cenią interesy społeczności.",
+        description_pl: "Mają wielką umiejętność dostrzeżenia i zrozumienia znaczenia ludzi oraz sytuacji, intuicję i wytrwałość. \n Cenią interesy społeczności.",
         good_match: ['ENFP', 'ENTP'],
         bad_match: ['ISFP', 'ESFP', 'ISTP', 'ESTP', 'ISFJ', 'ESFJ', 'ISTJ', 'ESTJ'],
         img_src: "elsa.gif"
@@ -79,7 +79,7 @@ const princessList = [
         name_pl: 'Jasmine',
         description: "이들은 조용하면서 과묵한 경향이 있다.\n 문제를 논리적, 분석적으로 해결하는 능력이 있다.",
         description_en: "They tend to be quiet and reticent.\n They have the ability to solve problems logically and analytically.",
-        description_pl: "Zwykle są ciche i powściągliwe.\n Mają zdolność logicznego i analitycznego rozwiązywania problemów.",
+        description_pl: "Zwykle są to osby ciche i powściągliwe.\n Mają zdolność logicznego i analitycznego rozwiązywania problemów.",
         good_match: ['ENTJ', 'ESTJ'],
         bad_match: [],
         img_src: "jasmine.gif"
@@ -91,7 +91,7 @@ const princessList = [
         name_pl: 'Aurora',
         description: "성실하며, 이해심이 많은 개방적이다. \n 표현을 잘 하지는 않으나 내적 신념이 강하다.",
         description_en: "You are sincere, understanding and open. \nI don't express myself well, but I have a strong inner conviction.",
-        description_pl: "Jesteś szczery, wyrozumiały i otwarty. \nNie wyrażam się dobrze, ale mam silne wewnętrzne przekonanie.",
+        description_pl: "Są to osoby szczere, wyrozumiałe i otwarte. \nNie wyrażają się dobrze, ale mają silne wewnętrzne przekonania.",
         good_match: ['ENFJ','ENTJ'],
         bad_match: ['ISFP', 'ESFP', 'ISTP', 'ESTP', 'ISFJ', 'ESFJ', 'ISTJ', 'ESTJ'],
         img_src: "aurora.gif"
@@ -103,7 +103,7 @@ const princessList = [
         name_pl: 'Tiana',
         description: "구체적이며, 현실적이고, 사실적인 경향이 있다.\n 일을 할 때는 조직화해서 처리해 나가는 성향을 가지고 있으며 지도력이 뛰어나다.",
         description_en: "You tend to be specific, down-to-earth, and factual.\n You have a tendency to organize and manage things and have excellent leadership skills.",
-        description_pl: "Masz tendencję do bycia konkretnym, rzeczowym i rzeczowym.\n Masz tendencję do organizowania i zarządzania sprawami oraz masz doskonałe umiejętności przywódcze.",
+        description_pl: "Mają tendencję do bycia konkretnymi i rzeczowymi.\n Mają tendencję do organizowania i zarządzania sprawami oraz mają doskonałe umiejętności przywódcze.",
         good_match: ['ISFP', 'ISTP'],
         bad_match: ['INFP', 'ENFP', 'INFJ', 'ENFJ'],
         img_src: "tiana.gif"
@@ -115,7 +115,7 @@ const princessList = [
         name_pl: "Anna",
         description: "따뜻한 마음을 가지고 있으며 이야기하는 것에 호의적으로 생각한다.\n 또한 타인에 대한 관심과 동정심이 많으며 친절하다. ",
         description_en: "You have a warm heart and are friendly to talk to.\nYou are also caring, compassionate, and kind to others.",
-        description_pl: "Masz ciepłe serce i łatwo się z tobą rozmawia.\nJesteś także troskliwy, współczujący i miły dla innych.",
+        description_pl: "Mają ciepłe serce i łatwo się z nimi rozmawia.\nSą także troskliwi, współczujący i mili dla innych.",
         good_match: ['ISFP', 'ISTP'],
         bad_match: ['INFP', 'ENFP', 'INFJ', 'ENFJ'],
         img_src: "anna.gif"
@@ -127,7 +127,7 @@ const princessList = [
         name_pl: "Merida",
         description: "느긋한 성격으로 관용적이며 타협에 능하다.\n 그렇기 때문에 현실적인 문제를 해결하는 능력이 풍부하다.",
         description_en: "You have a laid-back personality, are tolerant, and are good at negotiating.\n That's why you have a lot of ability to solve realistic problems.",
-        description_pl: "Jesteś wyluzowany, tolerancyjny i dobry w kompromisach.\n Dlatego masz dużą zdolność rozwiązywania realistycznych problemów.",
+        description_pl: "Są wyluzowani, tolerancyjni i dobrzy w kompromisach.\n Dlatego mają dużą zdolność rozwiązywania realistycznych problemów.",
         good_match: ['ISFJ', 'ISTJ'],
         bad_match: ['INFP', 'ENFP', 'INFJ', 'ENFJ'],
         img_src: "merida.gif"
@@ -139,7 +139,7 @@ const princessList = [
         name_pl: "Ariel",
         description: "사교적이면서 활동적이다.\n 또한 수용적이며, 낙천적이고 친절하다.",
         description_en: "You are sociable and active.\n Also accommodating, optimistic and friendly.",
-        description_pl: "Jesteś towarzyski i aktywny.\n Również gościnny, optymistyczny i przyjazny.",
+        description_pl: "Są to osoby towarzyskie i aktywne.\n Również gościnne, optymistyczne i przyjazne.",
         good_match: ['ISFJ', 'ISTJ'],
         bad_match: ['INFP', 'ENFP', 'INFJ', 'ENFJ'],
         img_src: "arial.gif"
@@ -151,7 +151,7 @@ const princessList = [
         name_pl: "Kida",
         description: "준비를 철저하게 하며, 활동적이면서 솔직한 사람들이다.\n 단호한 결단력 및 통솔력을 갖춘 것이 특징이다.",
         description_en: "You are well-prepared, active, and outspoken.\n You are characterized by firm determination and leadership.",
-        description_pl: "Jesteś dobrze przygotowany, aktywny i szczery.\n Cechuje Cię stanowcza determinacja i przywództwo.",
+        description_pl: "Są to osoby dobrze przygotowane, aktywne i szczere.\n Cechuje ich  stanowcza determinacja i przywództwo.",
         good_match: [ 'INFP', 'INTP'],
         bad_match: [],
         img_src: "kida.gif"
@@ -163,7 +163,7 @@ const princessList = [
         name_pl: "Pokahontas",
         description: "사교적이며, 타인들의 의견을 존중하는 것을 중요시 한다.\n 그러나 본인에게 하는 비판에 대해서는 예민하게 반응하는 경향이 많다.",
         description_en: "You are outgoing and value the opinions of others.\n However, you tend to react sensitively to criticism directed against you.",
-        description_pl: "Jesteś towarzyski i cenisz opinie innych.\n Jednak zwykle reagujesz wrażliwie na krytykę skierowaną przeciwko tobie.",
+        description_pl: "Są towarzyscy i cenią sobie opinie innych.\n Jednak zwykle reagują wrażliwie na krytykę skierowaną przeciwko nim",
         good_match: ['INFP', 'ISFP'],
         bad_match: ['ESFP', 'ISTP', 'ESTP', 'ISFJ', 'ESFJ', 'ISTJ', 'ESTJ'],
         img_src: "pokahontas.gif"
@@ -175,7 +175,7 @@ const princessList = [
         name_pl: "Esmeralda",
         description: "독창적이며 민첩한 사람들이 많다.\n 특히 넓은 안목을 가지고 있으며 여러 가지 방면과 재능과 관심을 지니고 있습니다.",
         description_en: "These types tend to be inventive and agile.\n You have a particularly broad eye and have many directions, talents and interests.",
-        description_pl: "Te typy są zwykle pomysłowe i zwinne.\n Masz szczególnie szerokie oko i masz wiele kierunków, talentów i zainteresowań.",
+        description_pl: "Te typy są zwykle pomysłowe i zwinne.\n Mają szczególnie szerokie otwarte oko i mają wiele talentów i zainteresowań.",
         good_match: ['INFJ', 'INTJ'],
         bad_match: [],
         img_src: "esmeralda.gif"
@@ -187,7 +187,7 @@ const princessList = [
         name_pl: "Rapunzel",
         description: "따뜻하며, 정열적이고 활기가 있는 경향이 많다.\n 이를 뒷받침 하는 재능이 충만하며 상상력과 감수성이 풍부하다.",
         description_en: "You tend to be warm, passionate, and energetic.\n You are full of talent to support this, and you are full of imagination and sensitivity.",
-        description_pl: "Zwykle jesteś ciepły, namiętny i energiczny.\n Masz talent, by to wspierać, jesteś pełen wyobraźni i wrażliwości.",
+        description_pl: "Zwykle są ciepli, namiętni i energiczni.\n Mają talent, by to wspierać, są pełni wyobraźni i wrażliwości",
         good_match: ['INFJ', 'INTJ'],
         bad_match: ['ISFP', 'ESFP', 'ISTP', 'ESTP', 'ISFJ', 'ESFJ', 'ISTJ', 'ESTJ'],
         img_src: "rapunzel.gif"
@@ -259,66 +259,67 @@ const questionListKr = [
 
 const questionListPl = [
     {
-        question: "Bo w tygodniu byłem w pracy,",
-        option1: "Musimy wychodzić w weekendy",
-        option2: "Powinieneś zostać w domu w weekendy!"
+        question: "W dni powszednie byłem w pracy,",
+        option1: "Koniecznie muszę gdzieś wyjść w weekend!",
+        option2: "Mój plan to odpoczynek cały weekend w moim pokoju!"
     },
     {
         question: "Kiedy zaczynałem swoją pasję",
-        option1: "Znajdźmy coś, co możemy robić wygodnie sami!",
-        option2: "W klubie możesz poznać nowych ludzi!"
+        option1: "Szukałem czegoś co mogę wygodnie zrobić sam",
+        option2: "W klubie można poznać nowych ludzi!"
     },
     {
         question: "Kiedy miałam się spotkać z przyjaciółką, ale nagle spotkanie zostało odwołane",
-        option1: "O tak! Wychodzenie z domu było irytujące...\n Co teraz powinienem zrobić~~? ekscytujący!",
+        option1: "O tak! Szykowanie się do wyjścia było udręką... Co teraz powinienem zrobić~~? ekscytujący!",
         option2: "Ah.. Jestem gotowy.... Czy ktoś ma czas?"
     },
     {
-        question: "O czym myślisz, kiedy przepraszasz?",
-        option1: "Królewna Śnieżka, Jabłko, Newton",
+        question: "Z czym kojarzy Ci się jabłko?",
+        option1: "Królewna Śnieżka, Newton",
         option2: "czerwony, owocowy, pyszny"
     },
     {
         question: "O czym myślisz przed wejściem do samolotu?",
-        option1: "Czy powinienem usiąść na miejscu przy wyjściu \n awaryjnym? Czy nie spadnie?",
-        option2: "Jaki jest posiłek podczas lotu? \n jaki film chcesz obejrzeć?"
+        option1: "Czy powinienem usiąść na miejscu przy wyjściu awaryjnym? Czy nie spadnie?",
+        option2: "Jaki jest posiłek podczas lotu? jaki film powinnam obejrzeć?"
     },
     {
         question: "Jakie znaczenie ma słuchanie muzyki?",
-        option1: "To prawdziwe arcydzieło, jeśli podoba ci się \n melodia i tekst!",
-        option2: "Muzyka to melodia i uczucie szczura!"
+        option1: "To prawdziwe arcydzieło, jeśli podoba ci się melodia i tekst!",
+        option2: "Muzyka to melodia i uczucia!"
     },
     {
         question: "Dostałem telefon od znajomego, który powiedział: „Miałem wypadek samochodowy”",
-        option1: "Ups! Czy jesteś bardzo ranny? \n czy wszystko w porządku?",
-        option2: "Miałeś poważny wypadek? \nco powiesz na herbatę kto zawinił"
+        option1: "Ups! Czy jesteś bardzo ranny? czy wszystko w porządku?",
+        option2: "Miałeś poważny wypadek? Czy masz ubezpieczenie?"
     },
     {
         question: "Przyjaciel: „Poszedłem do salonu piękności, ponieważ miałem depresję”",
-        option1: "dlaczego jesteś w depresji Co się stało?",
-        option2: "Dobra? jakie włosy zrobiłaś? barwiący? \n Trwała ondulacja? Pokaż mi!"
+        option1: "Dlaczego masz depresję? Co się stało?",
+        option2: "Jakie włosy zrobiłaś? Trwałą? Wyślij mi zdjęcie!"
     },
     {
         question: "Kiedy przyjaciel spóźnia się na spotkanie",
-        option1: "Przeprosiny uspokajają umysł",
-        option2: "Jeśli masz powód, twoje serce odetchnie z ulgą"
+        option1: "Przeprosiny wystarczą",
+        option2: "Jeśli ma powód, jest ok"
     },
     {
-        question: "Kiedy podróżuję, I",
-        option1: "Zrobiłem plan, co ty na to?",
-        option2: "Lubię wszystko!"
+        question: "Kiedy podróżuję, ja ….",
+        option1: "wszystko jest zaplanowane",
+        option2: "robię wszystko na spontana"
     },
     {
-        question: "Podczas gotowania I",
-        option1: "Wodę należy dokładnie odmierzyć \n miarką o pojemności 500 ml!",
-        option2: "Jedzenie smakuje się ręcznie ~ \n Z grubsza zobacz to na własne oczy i włóż ~"
+        question: "Podczas gotowania...",
+        option1: "Wodę należy dokładnie odmierzyć miarką o pojemności 500 ml!",
+        option2: "Jedzenie smakuje lepiej, jeżeli gotujemy na oko~!"
     },
     {
-        question: "Spojrzałem na okno rozmowy kakao...",
-        option1: "Gdy otrzymasz wiadomość, przeczytaj ją od razu",
-        option2: "Zwykle czytam to później, \n więc jest dużo wiadomości"
+        question: "Spojrzałem na messenger'a",
+        option1: "Gdy otrzymam wiadomość, od razu ją czytam",
+        option2: "Zwykle czytam wszystko później, więc jest bardzo dużo nieprzeczytanych wiadomości"
     },
 ];
+    
 
 const questionListEn = [
     {
