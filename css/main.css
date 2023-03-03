@@ -132,13 +132,10 @@ body {
     }
 
     .container .title div:first-child {
-        /* text-align: center; */
-        /* font-size: 28px; */
         margin-top: 30px;
         font-size: 1.9em;
     }
     .container .title div:nth-child(2){
-        /* color: blue; */
         font-size: 18px;
     }
 
@@ -154,7 +151,6 @@ body {
     }
     
     .result .btn {
-        /* width: 70%; */
         position: relative;
     }
 
@@ -290,4 +286,5 @@ body {
     font-size: 22px;
     cursor: pointer;
     margin-top: 15px;
+    color: #333;
 }
